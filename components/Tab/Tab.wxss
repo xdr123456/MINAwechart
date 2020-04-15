@@ -1,0 +1,19 @@
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20rpx;
+}
+
+.tab-item {
+    flex: 1;
+}
+
+.active {
+    color: red;
+}
+
+.content {
+    padding: 20rpx;
+}

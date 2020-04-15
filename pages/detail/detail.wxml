@@ -1,0 +1,43 @@
+<view class="detail">
+    <view class="top">
+        <swiper indicator-dots="{{true}}" indicator-color autoplay="{{true}}" duration="{{2000}}" circular>
+            <swiper-item wx:for="{{detaillist.pics}}" wx:key="cat_id">
+                <image src="{{item.pics_mid}}" mode="widthFix" data-index="{{index}}" bindtap="imagePreview" />
+            </swiper-item>
+        </swiper>
+        <view class="txt">
+            <view class="txt-left">
+                <view style="color:red">¥{{detaillist.goods_price}}</view>
+                <view>{{detaillist.goods_name}}</view>
+            </view>
+            <view class="txt-right">
+                <view class="iconfont icon-shoucang"></view>
+                <view>收藏</view>
+            </view>
+        </view>
+    </view>
+    <view style="color:red;font-size:40rpx">图文详情</view>
+    <rich-text nodes="{{detaillist.goods_introduce}}" space="ensp"></rich-text>
+    <view class="footer">
+        <view class="kefu">
+            <view class="iconfont icon-kefu"></view>
+            <view>联系客服</view>
+            <button open-type="contact" style="width:100%"></button>
+        </view>
+        <view class="share">
+            <view class="iconfont icon-fenxiang-1"></view>
+            <view>分享</view>
+            <button open-type="share" style="width:100%"></button>
+        </view>
+        <navigator  class="car" open-type="switchTab" url="/pages/car/car">
+            <view class="iconfont icon-gouwuche"></view>
+            <view >购物车</view>
+        </navigator>
+        <view class="addcar">
+            <view bindtap="addCar" data-id="{{detaillist.goods_id}}"> 加入购物车</view>
+        </view>
+        <view class="pay">
+            <view > 立即购买</view>
+        </view>
+    </view>
+</view>

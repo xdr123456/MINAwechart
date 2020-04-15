@@ -1,0 +1,13 @@
+.floor {
+  float: left;
+  width: 33.3%;
+}
+.floor:nth-last-child(-n+4) {
+  height: 27.72711207vw;
+  padding: 5rpx;
+  box-sizing: border-box;
+}
+.floor image {
+  height: 100%;
+  width: 100%;
+}

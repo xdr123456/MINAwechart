@@ -1,0 +1,36 @@
+.contain{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .left{
+        width: 200rpx;
+        height: 100vh;
+        view{
+            height: 80rpx;
+            line-height: 80rpx;
+            border-bottom: 1rpx solid #eee;
+            border-right: 1rpx solid #eee;
+        }
+        .active{
+            color: red;
+        }
+    }
+    .right{
+        flex: 1;
+        height: 100vh;
+        width: 100%;
+        .list{
+            width: 100%; 
+            overflow: hidden;
+            padding-top: 40rpx; 
+            border-bottom: 1rpx solid #eee;
+        }
+        .right-img{
+            float: left;
+            width: 33.3%;
+            image{
+               width: 100%;
+            }
+        }
+    }
+}

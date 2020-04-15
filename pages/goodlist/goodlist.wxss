@@ -1,0 +1,31 @@
+.list-item {
+    display: flex;
+    /* height: 391rpx; */
+    border-bottom: 1rpx solid #eee;
+}
+
+.list-img {
+    flex: 1;
+    padding: 10rpx;
+}
+
+.list-img image {
+    width: 100%;
+}
+
+.list-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20rpx;
+}
+
+.list-title {
+    flex: 1;
+}
+
+.list-price {
+    padding-top: 40rpx;
+    flex: 1;
+}

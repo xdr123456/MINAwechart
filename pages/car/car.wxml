@@ -1,0 +1,45 @@
+<button type="primary" plain class="btn" bindtap="addres">添加收货地址</button>
+<view class="title">购物车</view>
+<block wx:if="{{noneshopcar}}">
+    <view class="shopcar-list" wx:for="{{shopcar}}" wx:key="goods_id">
+        <view class="checkbox">
+            <checkbox-group>
+                <checkbox checked="{{isSlected}}" data-id="{{item.goods_id}}" bindtap="selectList"/>
+            </checkbox-group>
+        </view>
+        <view class="image">
+            <image mode="widthFix" src="{{item.goods_small_logo}}" />
+        </view>
+        <view class="right">
+            <view class="right-top">{{item.goods_name}}</view>
+            <view class="right-bottom">
+                <view class="price">¥{{item.goods_price}}</view>
+                <view class="count">
+                    <view class="jian">-</view>
+                    <view class="num">{{item.num}}</view>
+                    <view class="jia">+</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>
+<view wx:else>
+    <image src="../../image/timg.gif" mode="widthFix" style="text-aling:center;width:100%" />
+</view>
+<view class="footer">
+    <view class="footer-left">
+        <view class="footer-checkbox">
+            <checkbox-group>
+                <checkbox checked="{{isAllslect}}" bindtap="selectAll" />
+                <label>全选</label>
+            </checkbox-group>
+        </view>
+        <view class="footer-total">
+            <view class="total-price" style="color:red">¥{{totalPrice}}</view>
+            <view class="footer-text">包含邮费</view>
+        </view>
+    </view>
+    <view class="footer-right">
+        <view class="footer-pay" bindtap="paymoney">结算({{totalNum}})</view>
+    </view>
+</view>

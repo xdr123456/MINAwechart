@@ -1,0 +1,48 @@
+.contain {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.contain .left {
+    width: 200rpx;
+    height: 100vh;
+}
+
+.contain .left view {
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1rpx solid #eee;
+    border-right: 1rpx solid #eee;
+}
+
+.contain .left .active {
+    color: red;
+}
+
+.contain .right {
+    flex: 1;
+    height: 100vh;
+    width: 100%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.contain .right .list {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 40rpx;
+    border-bottom: 1rpx solid #eee;
+}
+
+.contain .right .right-img {
+    float: left;
+    width: 33.3%;
+}
+
+.contain .right .right-img image {
+    width: 100%;
+}

@@ -1,0 +1,47 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/category/category",
+        "pages/car/car",
+        "pages/mine/mine",
+        "pages/detail/detail",
+        "pages/goodlist/goodlist"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#d81e06",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "color": "#707070",
+        "selectedColor": "#d81e06",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "./image/shouye1.png",
+                "selectedIconPath": "./image/shouye.png"
+            },
+            {
+                "pagePath": "pages/category/category",
+                "text": "分类",
+                "iconPath": "./image/fen_lei21.png",
+                "selectedIconPath": "./image/fen_lei2.png"
+            },
+            {
+                "pagePath": "pages/car/car",
+                "text": "购物车",
+                "iconPath": "./image/gouwuche1.png",
+                "selectedIconPath": "./image/gouwuche.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "我的",
+                "iconPath": "./image/wode1.png",
+                "selectedIconPath": "./image/wode.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
